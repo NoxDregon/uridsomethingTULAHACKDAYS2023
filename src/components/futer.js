@@ -31,7 +31,7 @@ function Futer() {
           </div>
           <div className="UnderButton">
               <button className="MenuButton">Поддержка</button>
-              <div className="Arow"/>
+              <div className="Arow">↓</div>
           </div>
       </div>
     );

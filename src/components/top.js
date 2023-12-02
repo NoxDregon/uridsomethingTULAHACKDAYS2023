@@ -6,7 +6,7 @@ function Top() {
     
     return (
       <div className="Top">
-        <Image image = {topimage} className="Top"/>
+        <Image image = {topimage} className="Top"> </Image>
       </div>
     );
   }
