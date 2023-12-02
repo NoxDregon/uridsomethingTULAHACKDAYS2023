@@ -175,6 +175,12 @@ code {
 .UnderButton{
   display: none;
 }
+.open{
+  display: flex !important;
+}
+.downmenu{
+  display: none;
+}
 @media screen and (width < 800px) {
   .Adress {
     display: none;
@@ -182,12 +188,10 @@ code {
   .WeebsBlock{
     display: none;
   }
-  .WeebsIcon{
+  .Weebs{
     display: none;
   }
-  .WeebsText{
-    display: none;
-  }
+
   .UnderButton{
     display: flex;
     background-color: rgba(84, 82, 201, 1);
@@ -220,5 +224,30 @@ code {
     height: 40px;
     border-radius: 40px;
     text-align: center;
+  }
+  .partOfDownMenu{
+    width: 90%;
+    background-color: white;
+    margin-left: 5%;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    margin-top: 3%;
+  }
+  .downmenu{
+    background-color: rgba(84, 82, 201, 1);
+    padding-top:3% ;
+    padding-bottom: 3%;
+  }
+  .downmenu.active{
+    display: flex;
+  }
+  .WeebsIcon{
+    color: #000;
+    padding-left: 5%;
+  }
+  .WeebsText{
+    color: rgba(84, 82, 201, 1);
+    padding-left: 5%;
   }
 }
