@@ -142,3 +142,56 @@ code {
   position: absolute;
 
 }
+.futermain{
+  background-color: rgba(42, 60, 99, 1);
+  width: 100%;
+  height: auto;
+}
+.WeebsText{
+  color: white;
+  font-size: 25px;
+}
+.Weebs{
+  padding-left: 3%;
+  padding-right: 3%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.WeebsIcon{
+  width: 40px;
+  height: 40px;
+}
+.WeebsBlock{
+  display: grid;
+  grid-template-columns: 15% 85%;
+  align-items: center;
+}
+.Adress{
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  align-items: center;
+}
+.UnderButton{
+  display: none;
+}
+@media screen and (width < 800px) {
+  .Adress {
+    display: none;
+  }
+  .WeebsBlock{
+    display: none;
+  }
+  .WeebsIcon{
+    display: none;
+  }
+  .WeebsText{
+    display: none;
+  }
+  .UnderButton{
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+}

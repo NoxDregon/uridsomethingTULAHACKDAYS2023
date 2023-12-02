@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import Header from './components/header';
-import futer from './components/futer';
+import Futer from './components/futer';
 import Top from './components/top';
 import Documents from './components/documents';
 import WeAre from './components/weare';
@@ -15,7 +15,7 @@ root.render(
     <Header />
     <Top/>
     <Documents/>
-  
+    <Futer/>
   </div>
 );
 
