@@ -8,7 +8,7 @@ const AboutUs = () => {
                     <div className="profiles-container__part">
                     <ProfileCard name={"Наздар"} role={'Дизайнер'}/>
                     <ProfileCard name={"Григорий"} role={'Программист'}/>
-                    <ProfileCard name={"Никита"} role={'JS developer'}/>
+                    <ProfileCard className="cost" name={"Никита"} role={'JS developer'}/>
                     </div>
                     <div className="profiles-container__part profiles-container__part-right">
                     <ProfileCard name={"Леонид"} role={'Teamlead'}/>

@@ -4,7 +4,6 @@ import Image from "./Image";
 import logo from "../image/Logo.png"
 import logo2 from "../image/Logo2.png"
 import search from "../image/icons/search.png"
-import Navbar from "./navbar";
 import Menu from "./Menu";
 
 const Header = () => {
