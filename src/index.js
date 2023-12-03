@@ -6,6 +6,7 @@ import Top from './components/top';
 import Documents from './components/documents';
 import AboutUs from './components/aboutUs';
 import Personal from './components/Personal';
+import Futer from './components/futer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,6 +16,7 @@ root.render(
     <Top/>
     <Personal/>
     <Documents/>
+    <Futer/>
   </div>
 );
 

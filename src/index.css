@@ -467,3 +467,113 @@ a {
   text-decoration: none;
   color: white;
 }
+
+.futermain{
+  background-color: rgba(42, 60, 99, 1);
+  width: 100%;
+  height: 20%;
+}
+.WeebsText{
+  color: white;
+  font-size: 25px;
+  margin-left: 10px;
+}
+.Weebs{
+  padding-left: 3%;
+  padding-right: 3%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.WeebsIcon{
+  width: 40px;
+  height: 40px;
+}
+.WeebsBlock{
+  display: flex;
+  align-items: center;
+}
+.Adress{
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  align-items: center;
+}
+.UnderButton{
+  display: none;
+}
+.open{
+  display: flex !important;
+}
+.downmenu{
+  display: none;
+}
+@media screen and (width < 800px) {
+  .Adress {
+    display: none;
+  }
+  .WeebsBlock{
+    display: none;
+  }
+  .Weebs{
+    display: none;
+  }
+
+  .UnderButton{
+    display: flex;
+    background-color: rgba(84, 82, 201, 1);
+    width: 80%;
+    margin-left: 10%;
+    height: auto;
+    align-items: center;
+    border-radius: 20px;
+    
+  }
+  .MenuButton{
+    all:none;
+    margin-left: 3%;
+    width: 90%;
+    height: 100%;
+    text-align: left;
+    font-size: 25px;
+    color: white;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    
+  }
+  .Arow{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    text-align: center;
+  }
+  .partOfDownMenu{
+    width: 90%;
+    background-color: white;
+    margin-left: 5%;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    margin-top: 3%;
+  }
+  .downmenu{
+    background-color: rgba(84, 82, 201, 1);
+    padding-top:3% ;
+    padding-bottom: 3%;
+  }
+  .downmenu.active{
+    display: flex;
+  }
+  .WeebsIcon{
+    color: #000;
+    padding-left: 5%;
+  }
+  .WeebsText{
+    color: rgba(84, 82, 201, 1);
+    padding-left: 5%;
+  }
+}
