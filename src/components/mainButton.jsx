@@ -3,7 +3,7 @@ import React from "react";
 const MainButton = () => {
     return (
     <div className="main-btn">
-        <b>Составить сейчас</b>
+        <a href="https://t.me/iskovoezaevlenie_bot"  target="_blank">Составить сейчас</a>
     </div>
     )
 }

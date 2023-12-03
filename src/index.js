@@ -15,7 +15,6 @@ root.render(
     <Top/>
     <Personal/>
     <Documents/>
-    <AboutUs/>
   </div>
 );
 
