@@ -471,11 +471,12 @@ a {
 .futermain{
   background-color: rgba(42, 60, 99, 1);
   width: 100%;
-  height: auto;
+  height: 20%;
 }
 .WeebsText{
   color: white;
   font-size: 25px;
+  margin-left: 10px;
 }
 .Weebs{
   padding-left: 3%;
@@ -488,8 +489,7 @@ a {
   height: 40px;
 }
 .WeebsBlock{
-  display: grid;
-  grid-template-columns: 15% 85%;
+  display: flex;
   align-items: center;
 }
 .Adress{

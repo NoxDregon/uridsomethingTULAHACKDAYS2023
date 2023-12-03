@@ -15,15 +15,15 @@ function Futer() {
               <p className="WeebsText">Поддержка</p>
             <div className="WeebsBlock">
                 <Image image = {VK} className = "WeebsIcon"/>
-                <p className="WeebsText"> ·Вконтанте</p>
+                <p className="WeebsText"> · Вконтанте</p>
             </div>
             <div className="WeebsBlock">
                 <Image image = {TG} className="WeebsIcon"/>
-                <p className="WeebsText"> ·Телеграм</p>
+                <p className="WeebsText"> · Телеграм</p>
             </div>
             <div className="WeebsBlock">
                 <Image image = {EMAIL} className = "WeebsIcon"/>
-                <p className="WeebsText"> ·xakdays@gmail.com</p>
+                <p className="WeebsText"> · xakdays@gmail.com</p>
             </div>
           </div>
           <div className="Adress">
