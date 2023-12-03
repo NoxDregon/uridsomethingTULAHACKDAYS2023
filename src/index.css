@@ -9,18 +9,28 @@ code {
   margin: 0;
   width: 100%;
   height: 75px;
-  display: grid;
+  display: flex;
+  justify-content: space-between;
   z-index: 2;
-  grid-template-columns: 10% 40% 50%;
-  position: fixed;
   align-items: center;
+  position: fixed;
+  background-color: rgba(142, 74, 30, 0.13);
+}
+
+.headerImgs {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.left-part {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
 }
 .Avatar {
     position: relative; 
-    margin-left: 15%;
-    margin-top: 7px;
-    width: 60px;
-    height: 60px;
+    width: 25%;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
@@ -28,11 +38,15 @@ code {
 
 .input{
   padding-left: 3%;
+  max-width: 800px;
   background-color: white;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 800px) {
+    margin-left:3%;
+  }
 }
 .inputmain {
   all: unset;
@@ -76,7 +90,7 @@ code {
 
 
 .Top{
-  
+
   left: 0;
   top: 0;
   background-image: url(./image/TopBackground.png);
@@ -142,3 +156,180 @@ code {
   position: absolute;
 
 }
+.profiles-back {
+  padding-top: 5%;
+  background-color: rgba(42, 60, 99, 1);
+}
+.profiles-container {
+  
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  background-color:white;
+  clip-path: polygon(0 0, 80% 0, 100% 10%, 100% 100%, 20% 100%, 0 90%);
+  padding-bottom: 40px;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    height: 300px;
+    padding-top: 5%;
+  }
+}
+.profiles-container__part {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media (max-width: 800px) {
+    height: 100%;
+    padding-top: 0;
+    justify-content: start;
+  };
+  
+  
+}
+.profiles-container__part-right {
+  justify-content: space-around;
+  padding-left: 10%;
+  @media (max-width: 800px) {
+    justify-content: start;
+    padding-left: 0;
+    padding-top: 0;
+  }
+}
+.profile-card {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 15px;
+  display: flex;
+  width: 300px;
+  height: 90px;
+  align-items: center;
+  justify-content: start;
+  @media (max-width: 800px) {
+    width: 90%;
+    height: 60px;
+    margin-top: 5px;
+  }
+}
+
+.profile-card__logo {
+  background-color: rgba(42, 60, 99, 1);
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  border: 1px solid white;
+  @media (max-width: 800px) {
+    width: 100px;
+    height: 100px;
+  }
+}
+.profile-card__info {
+  padding-left: 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.Avatar2 {
+  width: 30%;
+}
+
+.burger__btn {
+  width: 35px;
+  height: 30px;
+  margin-left: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.burger__btn:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 35px;
+  background-color: black;
+  height: 3px;
+}
+.burger__btn:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 35px;
+  background-color: black;
+  height: 3px;
+}
+.burger__btn span {
+  position: absolute;
+  top: 14px;
+  width: 35px;
+  background-color: black;
+  height: 3px;
+}
+
+.menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 100px;
+  left: 0;
+  transform: translateX(-130%);
+  transition: all 0.3sec;
+  @media (max-width: 800) {
+    top: 60px;
+    
+  }
+}
+
+.menu.active {
+  transform: translateX(-30%);
+}
+
+.blur {
+  width: 100vw;
+  height: 100vh;
+  left: 30%;
+  backdrop-filter: blur(2px);
+  position: absolute;
+}
+
+.menu__content {
+  width: 30%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 3sec;
+  @media (max-width: 800) {
+    width: 100vw;
+  }
+}
+
+.menu__header {
+  padding: 10px;
+  font-size: 1.5rem;
+  border-bottom: 1px solid black;
+  width: 80%;
+  text-align: center;
+}
+
+ul li a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  width: 80%;
+  border-bottom: 1px solid black
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: center;
+} 
